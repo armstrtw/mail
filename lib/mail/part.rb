@@ -12,7 +12,7 @@ module Mail
     # 
     # It will preserve the content ID you specify if you do.
     def add_content_id(content_id_val = '')
-      header['content-id'] = content_id_val
+      header[ContentIdField::NAME] = content_id_val
     end
     
     # Returns true if the part has a content ID field, the field may or may
